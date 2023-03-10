@@ -10,7 +10,7 @@ interface GrandChild {
 //multiple inheritance
 class Child implements Parent,GrandChild{//this must implemet all functions of parent otherwise error
     public void display() {
-        S ystem.out.println("Child class");
+        System.out.println("Child class");
     }
     public void say() {
         System.out.println("Child class2");
