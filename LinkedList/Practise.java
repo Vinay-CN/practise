@@ -161,6 +161,33 @@ public class Practise {
             }
         }
     }
+    static void removeAt(int index)
+    {
+        if(index==0)
+        {
+            removeFirst();
+        }
+        else if(index==size())
+        {
+            removeLast();
+        }
+        else if(index<0 || index>size())
+        {
+            System.out.println("INVALID");
+            return;
+        }
+        else
+        {
+            // Node curr=getAt(index);
+            // Node temp=getAt(index-1);
+            // temp.next=curr.next;
+            Node prev=getAt(index-1);//15 13 12 11 100 this will return  
+            //prev.next=prev.next.next; this line will also works
+            Node toDelete=prev.next;//15 13 12 11 100  
+            prev.next=toDelete.next;
+        }
+    }
+    
     public static void main(String[] args){
         Node n1=new Node(5);
         Node n2=new Node(6);
@@ -182,10 +209,15 @@ public class Practise {
         printWN();
         System.out.println(size());
         //getAt(3);
-        addAt(0,1);
+        addAt(3,1);
         System.out.println(getAt(3).data);
        
         removeLast();
+        printWN();
+        addLast(100);
+        
+        printWN();
+        removeAt(4);
         printWN();
        
     }

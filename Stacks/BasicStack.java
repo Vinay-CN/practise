@@ -35,6 +35,7 @@ public class BasicStack {
         System.out.println(p.a + " " + p.b );
         System.out.println(st.isEmpty());
         System.out.println(st.size());
+        System.out.println("practise");
 
     }
 }

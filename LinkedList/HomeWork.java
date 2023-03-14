@@ -45,7 +45,7 @@ public class HomeWork {
     }
 
 
-    public static void remove()
+    public static void remove()//removefirst
 
     {
         if(head==null)
